@@ -1,5 +1,9 @@
-const ele = document.getElementById("ele1")
+const ele = document.getElementById("ele1") 
 
-ele.addEventListener("click", () => {
-    ele.style.backgroundColor = 'yellow'
-})
+const pintar = (color = 'green') =>  ele.style.backgroundColor = color
+
+pintar()
+
+ele.addEventListener("click", () => pintar('yellow')
+)
+
